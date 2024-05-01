@@ -45,19 +45,31 @@ const Sidebar = () => {
                   {item.title}
                 </p>
                 {item.links.map((link) => (
-                  <NavLink
+                <NavLink
                     to={`/${link.name}`}
                     key={link.name}
                     onClick={handleCloseSideBar}
                     style={({ isActive }) => ({
-                      backgroundColor: isActive ? currentColor : '',
+                        backgroundColor: isActive ? currentColor : '',
                     })}
                     className={({ isActive }) => (isActive ? activeLink : normalLink)}
-                  >
+                >
                     {link.icon}
-                    <span className="capitalize ">{link.name}</span>
-                  </NavLink>
-                ))}
+                    <span className="capitalize ">
+                        
+                    {link.name === 'orders' ? 'can decoder' : 
+                      (link.name === 'employees' ? 'can' : 
+                          (link.name === 'customers' ? 'decoder' :  
+                              (link.name === 'ecommerce' ? 'Réseaux locales industriels' : link.name)
+                          )
+                      )
+                  }
+                        
+                    </span>
+                    
+                </NavLink>
+            ))}
+
               </div>
             ))}
           </div>
