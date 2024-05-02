@@ -22,11 +22,9 @@ const ThemeSettings = () => {
           >
             <MdOutlineCancel />
           </button>
-
         </div>
         <div className="flex-col border-t-1 border-color p-4 ml-4">
           <p className="font-semibold text-xl ">Theme Option</p>
-
           <div className="mt-4">
             <input
               type="radio"
@@ -80,6 +78,18 @@ const ThemeSettings = () => {
             ))}
           </div>
         </div>
+        {/* Ajout du bouton Chatbot */}
+        <div className="p-4 border-t-1 border-color ml-4 flex justify-center items-center">
+        <button
+          className="bg-blue-500 text-white py-2 px-4 rounded"
+          onClick={() => {
+            // Logique à ajouter pour l'action du bouton Chatbot
+          }}
+        >
+          Chatbot
+        </button>
+      </div>
+
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const Orders = () => {
     var frameCount = document.getElementById('frameCount');
 
     if (canFrames === '') {
-      alert('Veuillez entrer une chaîne de trame CAN valide.');
+      alert('Please enter a valid CAN frame .');
       frameCount.innerHTML = '';
       decodedResult.innerHTML = '';
       return;
@@ -70,17 +70,15 @@ const Orders = () => {
   };
 
   return (
-    <div>
-      <Header category="Page" title="Decoder CAN" />
+    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+      <Header category="Page" title="Decoder CAN"  titleStyle="font-bold"/>
       <div className="container">
-        <h2 style={{ textAlign: 'center' }}>Decoder CAN</h2>
-        <textarea id="canFrame" placeholder="Entrez la trame CAN ici..."></textarea>
-        <button onClick={decodeFrame}>Décoder</button>
+      
+        <textarea id="canFrame" placeholder="Enter the CAN frame here..."></textarea>
+        <button onClick={decodeFrame}>Decode</button>
         <div id="decodedResult"></div>
         <p id="frameCount"></p>
-        <a href="index2.html">CRC and transmitted signal</a>
-        <br />
-        <a href="index3.html">CRC (calcul detaillé)</a>
+        
       </div>
 
       <div id="bit-diagram">
@@ -125,7 +123,7 @@ const Orders = () => {
               font-family: Arial, sans-serif;
               margin: 0;
               padding: 0;
-              background-image: url('test3.jpg');
+              
               background-size: cover;
               background-position: center;
               background-repeat: no-repeat;
@@ -156,7 +154,8 @@ const Orders = () => {
 
           button {
               padding: 10px 20px;
-              background-color: #4CAF50;
+              background-color: rgb(3,201,215);
+
               color: white;
               border: none;
               cursor: pointer;
@@ -164,7 +163,7 @@ const Orders = () => {
           }
 
           button:hover {
-              background-color: #45a049;
+              background-color: rgb(3,201,255);
           }
 
           #decodedResult {

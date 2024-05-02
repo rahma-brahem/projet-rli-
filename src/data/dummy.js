@@ -529,29 +529,29 @@ export const chatData = [
   {
     image:
       avatar2,
-    message: 'Roman Joined the Team!',
-    desc: 'Congratulate him',
+    message: 'Tasnim Joined the Group!',
+    desc: 'Congratulate her',
     time: '9:08 AM',
   },
   {
     image:
       avatar3,
     message: 'New message received',
-    desc: 'Salma sent you new message',
+    desc: 'Ahmed sent you new message',
     time: '11:56 AM',
   },
   {
     image:
       avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
+    message: 'New message received',
+    desc: 'Karim sent you new message',
     time: '4:39 AM',
   },
   {
     image:
-      avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
+      avatar2,
+    message: 'Ons asked a Question',
+    desc: 'I need help',
     time: '1:12 AM',
   },
 ];
