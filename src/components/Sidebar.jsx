@@ -25,7 +25,7 @@ const Sidebar = () => {
         <>
           <div className="flex justify-between items-center">
             <Link to="/" onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
-              <SiShopware /> <span>CAN</span>
+              <SiShopware /> <span>CAN/MODBUS</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
@@ -56,13 +56,14 @@ const Sidebar = () => {
                 >
                     {link.icon}
                     <span className="capitalize ">
-                        
-                    {link.name === 'orders' ? 'can decoder' : 
-                      (link.name === 'employees' ? 'can calculator' : 
-                          (link.name === 'customers' ? 'can detailed calc' :  
-                              (link.name === 'ecommerce' ? 'Réseaux locales industriels' : link.name)
+                    
+                    {link.name === 'orders' ? 'Can/MODBUS ': 
+                      (link.name === 'employees' ? 'CAN FRAME ' : 
+                          (link.name === 'customers' ? 'MODBUS FRAME' : 
+                              (link.name === 'Editor' ? 'MODBUS' : 
+                              (link.name === 'ecommerce' ? 'Industrial Local Networks' : link.name)
                           )
-                      )
+                      ))
                   }
                         
                     </span>

@@ -55,13 +55,22 @@
   height: 40vmin;
   pointer-events: none;
 }
+.godhbL {
+  /* Autres styles restent inchangés */
+  bottom: 170px;
+  background-color: aqua;
+  /* Augmentez cette valeur pour déplacer le bouton vers le haut */
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.godhbL {
+  /* Autres styles restent inchangés */
+  bottom: 170px; /* Augmentez cette valeur pour déplacer le bouton vers le haut */
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Header } from '../components';
 
-const Orders = () => {
+const Customers = () => {
   const decodeFrame = () => {
     var canFrames = document.getElementById('canFrame').value.trim();
     var decodedResult = document.getElementById('decodedResult');
@@ -71,10 +71,10 @@ const Orders = () => {
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="Page" title="Decoder CAN"  titleStyle="font-bold"/>
+      <Header category="Page" title="MODBUS FRAME"  titleStyle="font-bold"/>
       <div className="container">
       
-        <textarea id="canFrame" placeholder="Enter the CAN frame here..."></textarea>
+        <textarea id="canFrame" placeholder="Enter the MODBUS frame here..."></textarea>
         <button onClick={decodeFrame}>Decode</button>
         <div id="decodedResult"></div>
         <p id="frameCount"></p>
@@ -90,7 +90,7 @@ const Orders = () => {
         <br />
         <br />
         <br />
-        <div id="bits-container"></div>
+        
       </div>
 
       <style>
@@ -191,9 +191,7 @@ const Orders = () => {
               }
           }
 
-          .rotate {
-              animation: rotate 2s linear;
-          }
+          
         `}
       </style>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -202,4 +200,4 @@ const Orders = () => {
   );
 };
 
-export default Orders;
+export default Customers;
